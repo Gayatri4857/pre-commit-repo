@@ -7,11 +7,3 @@ repos:
    hooks:
      - id: pretty-format-java
        args: [--autofix, --google-java-formatter-version=1.21.0]
-
- - repo: local
-   hooks:
-     - id: check_commiter_name
-       name: Check committer name
-       entry: python check_name.py
-       language: python
-       stages: [pre-commit]
